@@ -118,7 +118,13 @@
       autoplay: true,
       loop: true,
     });
-
+    
+    window.addEventListener("load", () => {
+      if (confirm("¿Deseas permitir que el sitio web reproduzca sonido de fondo?")) {
+        sound.play();
+      }
+    });
+    
   </script>
 </body>
 
